@@ -5,6 +5,7 @@ let inputQuestion = readline.createInterface({
     output: process.stdout
 });
 
+//Demande un nombre
 inputQuestion.question('Saisir un nombre : ', (nombreUser) => {
     let nombre = parseInt(nombreUser);
 
@@ -13,7 +14,7 @@ inputQuestion.question('Saisir un nombre : ', (nombreUser) => {
 
     } else {
         for (let i = 1; i <= nombre; i++) {
-            //Utilisation du .repeat(i) pour rajouter n * par rapport au nombre choisi par l'utilisateur
+            //Utilisation du .repeat(i) pour rajouter n '*' par rapport au nombre choisi par l'utilisateur
             console.log('*'.repeat(i));
         }
     }

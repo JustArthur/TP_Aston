@@ -3,6 +3,7 @@ function sommeTab(tab) {
         return 0;
     }
 
+    //Accumule les valeurs présentante dans le tableau
     let somme = tab.reduce((accumulateur, valeur) => accumulateur + valeur, 0);
     return somme;
 }

@@ -5,7 +5,7 @@ let inputQuestion = readline.createInterface({
     output: process.stdout
 });
 
-//Demande un chiffre au user
+//Demande un nombre
 inputQuestion.question('Saisir un nombre : ', (nombreN) => {
     let N = parseInt(nombreN);
 

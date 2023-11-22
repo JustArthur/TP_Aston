@@ -1,6 +1,9 @@
-const notes = [1, 5, 12, 15, 19];
+//Tableau par défault
+let notes = [1, 5, 12, 15, 19];
 
 function commenterNotes(listeNotes) {
+
+    //Pour chaque item de mon tableau il vérifie la note
     listeNotes.forEach(note => {
         if (note >= 0 && note <= 4) {
             console.log(`${note} : Catastrophique, il faut tout revoir`);

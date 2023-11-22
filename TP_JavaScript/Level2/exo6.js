@@ -5,6 +5,7 @@ let inputQuestion = readline.createInterface({
     output: process.stdout
 });
 
+//Demande un nombre
 inputQuestion.question('Saisir un nombre : ', (nombreUser) => {
     let nombre = parseInt(nombreUser);
 
@@ -12,6 +13,8 @@ inputQuestion.question('Saisir un nombre : ', (nombreUser) => {
         console.log('Nombre entier positif requis.');
     } else {
         for (let i = 1; i <= nombre; i++) {
+
+            //Il met x-1 espace et met 2*x-1 étoile pour bien les centrer par rapport à la demande
             console.log(' '.repeat(nombre - i) + '*'.repeat(2 * i - 1));
         }
     }

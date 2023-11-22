@@ -6,6 +6,7 @@ let inputQuestion = readline.createInterface({
 });
 
 function chiffreRomain(nombreEnDecimal) {
+    //Defini la valeur decimal par le symbol romain
     let symbolesRomains = [
         { valeur: 1000, symbole: 'M' },
         { valeur: 900, symbole: 'CM' },
@@ -24,6 +25,7 @@ function chiffreRomain(nombreEnDecimal) {
 
     let nombreRomain = '';
 
+    //Vérifie si une des valeurs possède un symbole romain, si oui il met sinon il met I
     for (let i = 0; i < symbolesRomains.length; i++) {
         while (nombreEnDecimal >= symbolesRomains[i].valeur) {
             nombreRomain += symbolesRomains[i].symbole;

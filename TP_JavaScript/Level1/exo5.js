@@ -14,6 +14,7 @@ inputQuestion.question('Prix de fabrication : ', (prixFabrication) => {
         //Met en float pour soustraire le prix de vente par le prix de fabrication
         let res = parseFloat(prixVente) - parseFloat(prixFabrication);
 
+        //Verifie si il fait un profit ou une perte
         if (res > 0) {
             console.log(`Profit de ${res} euros.`);
 
