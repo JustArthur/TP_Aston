@@ -9,7 +9,7 @@ inputQuestion.question('Saisir un nombre : ', (nombreN) => {
     let nombre = parseInt(nombreN);
 
     if (isNaN(nombre) || nombre < 0) {
-        console.log('Sombre entier positif requis.');
+        console.log('Nombre entier positif requis.');
     } else {
         for (let i = 0; i <= nombre; i++) {
             let resultat = '';
