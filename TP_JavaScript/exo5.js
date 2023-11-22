@@ -1,12 +1,17 @@
 let readline = require('readline');
 
-let affUser = readline.createInterface({
+let inputQuestion = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-affUser.question('Prix de fabrication : ', (prixFabrication) => {
-    affUser.question('Prix de vente : ', (prixVente) => {
+//Demande le prix de fabrication
+inputQuestion.question('Prix de fabrication : ', (prixFabrication) => {
+
+    //Demande le prix de vente
+    inputQuestion.question('Prix de vente : ', (prixVente) => {
+
+        //Met en float pour soustraire le prix de vente par le prix de fabrication
         let res = parseFloat(prixVente) - parseFloat(prixFabrication);
 
         if (res > 0) {
@@ -19,6 +24,6 @@ affUser.question('Prix de fabrication : ', (prixFabrication) => {
             console.log('Pas de profit, Pas de perte.');
         }
 
-        affUser.close();
+        inputQuestion.close();
     });
 });

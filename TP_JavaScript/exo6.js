@@ -1,11 +1,11 @@
 let readline = require('readline');
 
-let affUser = readline.createInterface({
+let inputQuestion = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-affUser.question('Veuillez saisir un nombre : ', (nombreInput) => {
+inputQuestion.question('Veuillez saisir un nombre : ', (nombreInput) => {
     let nombreInt = parseInt(nombreInput);
 
     if (isNaN(nombreInt)) {
@@ -18,5 +18,5 @@ affUser.question('Veuillez saisir un nombre : ', (nombreInput) => {
         }
     }
 
-    affUser.close();
+    inputQuestion.close();
 });

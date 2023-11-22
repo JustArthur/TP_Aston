@@ -1,11 +1,11 @@
 let readline = require('readline');
 
-let affUser = readline.createInterface({
+let inputQuestion = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-affUser.question('Ton nombre : ', (nombre) => {
+inputQuestion.question('Ton nombre : ', (nombre) => {
     let nombreCalc = parseFloat(nombre);
 
     if (isNaN(nombreCalc)) {
@@ -20,5 +20,5 @@ affUser.question('Ton nombre : ', (nombre) => {
         }
     }
 
-    affUser.close();
+    inputQuestion.close();
 });

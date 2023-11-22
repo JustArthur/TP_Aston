@@ -1,11 +1,11 @@
 let readline = require('readline');
 
-let affUser = readline.createInterface({
+let inputQuestion = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-affUser.question('Table de : ', (nombreInput) => {
+inputQuestion.question('Table de : ', (nombreInput) => {
     let nombreInt = parseInt(nombreInput);
 
     if (isNaN(nombreInt)) {
@@ -17,5 +17,5 @@ affUser.question('Table de : ', (nombreInput) => {
         }
     }
 
-    affUser.close();
+    inputQuestion.close();
 });

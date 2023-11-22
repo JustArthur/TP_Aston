@@ -2,8 +2,7 @@ function sommeTab(tab) {
     if (tab.length === 0) {
       return 0;
     }
-  
-    //pour calculer la somme des valeurs j'utilise reduce
+
     let somme = tab.reduce((accumulateur, valeur) => accumulateur + valeur, 0);
     return somme;
 }

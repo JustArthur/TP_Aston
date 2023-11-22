@@ -1,12 +1,14 @@
 let readline = require('readline');
 
-let affUser = readline.createInterface({
+let inputQuestion = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-affUser.question('Age de l\'enfant : ', (resUser) => {
+//Demande l'âge
+inputQuestion.question('Age de l\'enfant : ', (resUser) => {
     
+    //Vérifie l'âge de l'enfant et print selon son âge
     if(resUser >= 12) {
         console.log('Enfant Cadet');
 
@@ -20,5 +22,5 @@ affUser.question('Age de l\'enfant : ', (resUser) => {
         console.log('Enfant Poussin');
     }
 
-    affUser.close();
+    inputQuestion.close();
 });
