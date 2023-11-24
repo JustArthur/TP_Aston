@@ -29,6 +29,7 @@ function calculerScoreBowling() {
                     if (avantPrécédentLancer === 10) {
                         // Bonus pour un strike
                         scoreTotal += quillesAbattues;
+
                     } else if (précédentLancer === 10) {
                         // Bonus pour un spare
                         scoreTotal += quillesAbattues;
@@ -54,13 +55,15 @@ function calculerScoreBowling() {
 
                 // Afficher le score après chaque lancer
                 console.log(`Score actuel = ${scoreTotal}`);
+                console.log(lancers);
 
                 // Si le tour <= 10 alors il ranlance les quilles
                 if (tourActuel <= 10) {
                     demanderQuilles();
+
                 } else {
                     // Sinon le jeu est fini
-                    console.log(`Score final = ${scoreTotal}`);
+                    console.log(`SCORE FINAL = ${scoreTotal}`);
                     inputQuestion.close();
                 }
             } else {
