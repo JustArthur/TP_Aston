@@ -1,3 +1,5 @@
+//! CODE NON FINI AVEC POSSIBLE "BUG"
+
 let readline = require('readline');
 
 let inputQuestion = readline.createInterface({
